@@ -4,7 +4,9 @@ export default class Modal {
     this.botaoFechar = document.querySelector(botaoFechar);
     this.containerModal = document.querySelector(containerModal);
 
-    // bind this ao acllback para fazer referência ao objeto da classe
+    // bind this ao callback para
+    // fazer referência ao objeto
+    // da classe
     this.eventToggleModal = this.eventToggleModal.bind(this);
     this.cliqueForaModal = this.cliqueForaModal.bind(this);
   }
@@ -27,7 +29,7 @@ export default class Modal {
     }
   }
 
-  // adciona os eventos aos elementos do modal
+  // adiciona os eventos aos elementos do modal
   addModalEvents() {
     this.botaoAbrir.addEventListener('click', this.eventToggleModal);
     this.botaoFechar.addEventListener('click', this.eventToggleModal);
