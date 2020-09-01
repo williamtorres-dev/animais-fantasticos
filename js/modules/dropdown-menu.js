@@ -13,8 +13,8 @@ export default class DropdownMenu {
     this.activeDropdownMenu = this.activeDropdownMenu.bind(this);
   }
 
-  // Ativa o dropdownmenu e adicioina
-  // a funçaõ que observa o clique fora dele
+  // Ativa o dropdownmenu e adiciona
+  // a função que observa o clique fora dele
   activeDropdownMenu(event) {
     event.preventDefault();
     const element = event.currentTarget;
@@ -24,7 +24,7 @@ export default class DropdownMenu {
     });
   }
 
-  // Adiciona os eventos ao dropdownmenu
+  // adiciona os eventos ao dropdownmenu
   addDropdownMenusEvent() {
     this.dropdownMenus.forEach((menu) => {
       this.events.forEach((userEvent) => {
